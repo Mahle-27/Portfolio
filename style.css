@@ -360,106 +360,42 @@ p {
 /*End contact Section */
 
 /* Footer */
-:root { 
-  --white: #ffffff;
-  --black: #000;
+#footer {
+	background-image: linear-gradient(60deg, rgba(2, 3, 110, 0.884) 0%, rgba(2, 3, 110, 0.884) 100%);
 }
-
-
-#footer body {
-  margin: 0;
-  padding: 0;
-  background: #ffad69;
+#footer .footer {
+	min-height: 200px;
+	flex-direction: column;
+	padding-top: 50px;
+	padding-bottom: 10px;
 }
-
-#footer ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform:translate(-50%, -50%);
-  margin: 0;
-  padding: 0;
-  display: flex;
+#footer h2 {
+	color: white;
+	font-weight: 500;
+	font-size: 1.8rem;
+	letter-spacing: 0.1rem;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
-
-ul li {
-  list-style: none;
-  margin: 0 40px;
+#footer .social-icon {
+	display: flex;
+	margin-bottom: 30px;
 }
-
-#footer ul li a .fab{
-  font-size: 30px;
-   color: black;
-   line-height: 50px;
-   transition: .5s;
+#footer .social-item {
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
 }
-
- #footer ul li a {
-  position: relative;
-   display: block;
-   width: 50px;
-   height: 50px;
-   background: #808080;
-   text-align: center;
-   transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0,0);
-   transition: .5s;
-   box-shadow: -30px 30px 10px rgba(0,0,0,.5);
+#footer .social-item img {
+	filter: grayscale(1);
+	transition: 0.3s ease filter;
 }
-
-#footer ul li a:before {
-  content: '';
-  position: absolute;
-  top: 10px ;
-  left: -20px;
-  height: 100%;
-  width: 20px;
-  background: #93a092;
-  transition: .5s;
-  transform: rotate(0deg) skewY(-45deg);
+#footer .social-item:hover img {
+	filter: grayscale(0);
 }
-
-#footer ul li a:after {
-  content: '';
-  position: absolute;
-  bottom: -20px ;
-  left: -10px;
-  height: 20px;
-  width: 100%;
-  background: #D3D3D3;
-  transition: .5s;
-  transform: rotate(0deg) skewX(-45deg);
-}
-
-#footer ul li a:hover{
-  transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px,-20px);
-  box-shadow: -50px 50px 50px rgba(0,0,0,.5);
-}
-#footer ul li:hover .fab{
-  color:white;
-}
-
-#footer ul li:hover:nth-child(2) a {
-  background: #55acee;
-}
-
-#footer ul li:hover:nth-child(2) a:before {
-  background: #64B2EE;
-}
-
-#footer ul li:hover:nth-child(2) a:after{
-  background: #73BAF0;
-}
-
-#footer ul li:hover:nth-child(3) a {
-  background: #131418;
-}
-
-#footer ul li:hover:nth-child(3) a:before {
-  background: #171717;
-}
-
-#footer ul li:hover:nth-child(3) a:after{
-  background: #2E2E2E;
+#footer p {
+	color: white;
+	font-size: 1.3rem;
 }
 /* End Footer */
 
