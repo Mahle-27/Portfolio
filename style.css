@@ -64,6 +64,7 @@ p {
 	color: white;
 	background-color: rgb(168, 5, 127)rgb(168, 5, 127);
 }
+
 .brand h1 {
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -71,6 +72,12 @@ p {
 }
 .brand h1 span {
 	color: rgb(168, 5, 127);
+}
+
+.my-name {
+	font-family: 'Charm', cursive;
+	/* font-size: medium; */
+	/* font-weight: bolder; */
 }
 
 /* Header section */
@@ -200,6 +207,36 @@ p {
 }
 /* End Header section */
 
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+	/* header */
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
+
 /* Hero Section */
 #hero {
 	background-image: url(Amahle\ N.jpg);
@@ -314,6 +351,55 @@ p {
 }
 /* End About Section */
 
+
+	/* About */
+	#about .about {
+		flex-direction: row;
+	}
+	#about .col-left {
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
+	}
+	#about .about .col-left .about-img::after {
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid rgb(168, 5, 127);
+	}
+	#about .col-right {
+		text-align: left;
+		padding: 30px;
+	}
+	#about .col-right h1 {
+		text-align: left;
+	}
+	/* End About */
+
+/* Skills Section */
+
+  .back {
+	  background: none !important;
+	  flex-direction: column-reverse;
+	  max-width: 1200px;
+		margin: 0 auto;
+  }
+  
+  .skill {
+	  background: linear-gradient(90deg, grey 0%, blue 10%, red 50%, pink 100%);
+	  text-align: right;
+	  padding-right: 20px;
+	  line-height: 30px;
+	  border-radius: 0 20px 20px 0;
+	  
+  }
+
+  #skills {
+	  padding-left: 10%;
+  }
+/* End Skills Section */
+
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
@@ -360,7 +446,6 @@ p {
 /*End contact Section */
 
 /* Footer */
-
 #footer {
 	background-image: linear-gradient(60deg, rgba(2, 3, 110, 0.884) 0%, rgba(2, 3, 110, 0.884) 100%);
 }
@@ -398,6 +483,7 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
+
 /* End Footer */
 
 /* Keyframes */
@@ -447,32 +533,6 @@ p {
 	#hero h1 {
 		font-size: 7rem;
 	}
-	
-
-	/* About */
-	#about .about {
-		flex-direction: row;
-	}
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid rgb(168, 5, 127);
-	}
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-	#about .col-right h1 {
-		text-align: left;
-	}
-	/* End About */
 
 	/* contact  */
 	#contact .contact {
@@ -507,37 +567,7 @@ p {
 		padding-left: 20px;
 	}
 	/* End contact  */
-}
 
-.my-name {
-	font-family: 'Charm', cursive;
-	/* font-size: medium; */
-	/* font-weight: bolder; */
-}
-
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-	/* header */
-	#header .hamburger {
-		display: none;
-	}
-	#header .nav-list ul {
-		position: initial;
-		display: block;
-		height: auto;
-		width: fit-content;
-		background-color: transparent;
-	}
-	#header .nav-list ul li {
-		display: inline-block;
-	}
-	#header .nav-list ul li a {
-		font-size: 1.8rem;
-	}
-	#header .nav-list ul a:after {
-		display: none;
-	}
-	/* End header */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
