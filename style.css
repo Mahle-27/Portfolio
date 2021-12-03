@@ -375,6 +375,14 @@ p {
 	font-weight: 500;
 	margin-bottom: 5px;
 }
+
+#contact .contact-item a {
+	color: inherit;
+	display: flex;
+	align-items: center;
+}
+
+
 #contact .contact-info h2 {
 	font-size: 1.3rem;
 	line-height: 2rem;
