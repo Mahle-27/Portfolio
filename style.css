@@ -337,6 +337,118 @@ p {
   }
 /* End Skills Section */
 
+/* Portfolio Section */
+.Portfolio .carousel .card{
+
+    color: #fff; background: grey; border-radius: 6px;
+
+    padding: 25px 35px; text-align: center; overflow: hidden;
+
+    transition: all 0.3s ease;
+
+}
+
+.Portfolio .carousel .card:hover{
+
+    background: rgb(168, 5, 127);
+
+}
+
+.Portfolio .carousel .card .box{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    transition: all 0.3s ease;
+
+}
+
+.Portfolio .carousel .card:hover .box{
+
+    transform: scale(1.05);
+
+}
+
+.Portfolio .carousel .card .text{
+
+    font-size: 25px;
+
+    font-weight: 500;
+
+    margin: 10px 0 7px 0;
+
+}
+
+.Portfolio .carousel .card img{
+
+    height: 150px;
+
+    width: 150px;
+
+    object-fit: cover;
+
+    border-radius: 20%;
+
+    border: 5px solid rgb(168, 5, 127);
+
+    transition: all 0.3s ease;
+
+}
+
+.Portfolio .carousel .card:hover img{
+
+    border-color: #fff;
+
+}
+
+.owl-dots{
+
+    text-align: center;
+
+    margin-top: 20px;
+
+}
+
+.owl-dot{
+
+    height: 13px;
+
+    width: 13px;
+
+    margin: 0 5px;
+
+    outline: none!important;
+
+    border-radius: 50%;
+
+    border: 2px solid rgb(168, 5, 127)!important;
+
+    transition: all 0.3s ease;
+
+}
+
+.owl-dot.active{
+
+    width: 35px;
+
+    border-radius: 14px;
+
+}
+
+.owl-dot.active,
+
+.owl-dot:hover{
+
+    background: rgb(168, 5, 127)!important;
+
+}
+/* End of Portfolio Section */
+
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
