@@ -202,7 +202,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(Amahle\ N.jpg);
+	background-image: url("./images/Amahle N.jpg");
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -322,14 +322,14 @@ p {
 	  max-width: 1200px;
 	 margin: 0 auto;
   }
-  
+
   .skill {
 	  background: linear-gradient(90deg, grey 0%, blue 10%, red 50%, pink 100%);
 	  text-align: right;
 	  padding-right: 20px;
 	  line-height: 30px;
 	  border-radius: 0 20px 20px 0;
-	  
+
   }
 
   #skills {
@@ -590,7 +590,7 @@ p {
 	#hero h1 {
 		font-size: 7rem;
 	}
-	
+
 
 	/* About */
 	#about .about {
